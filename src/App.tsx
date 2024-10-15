@@ -29,6 +29,7 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Toast from './pages/Toast';
 import Tsf from './pages/Tsf';
+import Unlock from './pages/unlock';
 function App() {
  console.log('s');
   return (
@@ -39,6 +40,8 @@ function App() {
           {/* c */}
 
           <Route  path="/"  element = {<S />} />
+          <Route  path="/sfmedi-unlock"  element = {<Unlock />} />
+
           <Route  path="/toast"  element = {<Toast />} />
           <Route path = "/engmedgdn" element = {<Party />} />
           <Route path = "/ip" element = {<Ip />} />
