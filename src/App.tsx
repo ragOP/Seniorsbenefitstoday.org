@@ -30,6 +30,7 @@ import Privacy from "./pages/Privacy";
 import Toast from './pages/Toast';
 import Tsf from './pages/Tsf';
 import Unlock from './pages/unlock';
+import Temp from './pages/temp';
 function App() {
  console.log('s');
   return (
@@ -41,7 +42,7 @@ function App() {
 
           <Route  path="/"  element = {<S />} />
           <Route  path="/sfmedi-unlock"  element = {<Unlock />} />
-
+          <Route path = "/engmed-temp" element = {<Temp/>} />
           <Route  path="/toast"  element = {<Toast />} />
           <Route path = "/engmedgdn" element = {<Party />} />
           <Route path = "/ip" element = {<Ip />} />
