@@ -132,7 +132,7 @@ export default function Fifth_SP() {
     <div>
    
      <div  className="top-sticky-blue-test2" id="top">
-     Seniors benefits Today
+     Seniors Benefits Today
   </div>
 
       {step === "process" ? (
