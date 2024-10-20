@@ -91,7 +91,7 @@ const topScroll = (id: any) => {
   scrollTo({ id });
 };
 
-const handleQuizP = () => {
+const handleYes = () => {
   topScroll("btn");
   if (quiz === "Are you over the age of 64?  ") {
     setYes("Yes")
@@ -105,7 +105,7 @@ const handleQuizP = () => {
 
 };
 
-const handleQuizN = () => {
+const handleNo = () => {
   topScroll("btn");
   if (quiz === "Are you over the age of 60?  ") {
     setYes("Yes")
@@ -124,7 +124,7 @@ const handleQuizN = () => {
     <div>
     
      <div  className="top-sticky-blue-test2" id="top">
-     <img src={aa} alt="Description of " style={{ height: '74%', maxWidth: '74%', }} />
+     Seniors benefits Today
   </div>
 
       {step === "process" ? (
@@ -158,16 +158,16 @@ Seniors On Medicare Can Unlock Their Food Allowance Worth Up To $900!
               </div>
               <div  className=
               "answer">
-              {quiz === "Select Your Age:  " && <div className="answer-btn-5" onClick={handleQuizP} style={{"textTransform": "capitalize"}}>
+              {quiz === "Select Your Age:  " && <div className="answer-btn-5" onClick={handleYes} style={{"textTransform": "capitalize"}}>
               {fourth}
                 </div>}
-                <div className="answer-btn-5" onClick={handleQuizP}>
+                <div className="answer-btn-5" onClick={handleYes}>
               {yes}
                 </div>
-                <div className="answer-btn-5" onClick={handleQuizN}>
+                <div className="answer-btn-5" onClick={handleNo}>
               {no}
                 </div>
-               <div className="answer-btn-5" onClick={handleQuizP}>
+               <div className="answer-btn-5" onClick={handleYes}>
               {third}
                 </div>
               </div> */}
@@ -175,10 +175,10 @@ Seniors On Medicare Can Unlock Their Food Allowance Worth Up To $900!
                 {quiz}
               </div>
               <div  className="answer">
-                <div className="answer-btn-5" onClick={handleQuizP}>
+                <div className="answer-btn-5" onClick={handleYes}>
               {yes}
                 </div>
-                <div className="answer-btn-5" onClick={handleQuizN}>
+                <div className="answer-btn-5" onClick={handleNo}>
               {no}
                 </div>
               </div>

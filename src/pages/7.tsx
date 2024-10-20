@@ -93,7 +93,7 @@ export default function Fifth_SP() {
     scrollTo({ id });
   };
 
-  const handleQuizP = () => {
+  const handlepositive = () => {
     topScroll("btn");
     if (quiz === "Select Your Age:  ") {
       setYes("Yes")
@@ -111,7 +111,7 @@ export default function Fifth_SP() {
 
   };
 
-  const handleQuizN = () => {
+  const handleNo = () => {
     topScroll("btn");
     if (quiz === "Are you over the age of 60?  ") {
       setYes("Yes")
@@ -132,7 +132,7 @@ export default function Fifth_SP() {
     <div>
    
      <div  className="top-sticky-blue-test2" id="top">
-     <img src={aa} alt="Description of " style={{ height: '74%', maxWidth: '74%', }} />
+     Seniors benefits Today
   </div>
 
       {step === "process" ? (
@@ -163,16 +163,16 @@ export default function Fifth_SP() {
                 {quiz}
               </div>
               <div  className="answer">
-              {quiz === "Select Your Age:  " && <div className="answer-btn-5" onClick={handleQuizP} style={{"textTransform": "capitalize"}}>
+              {quiz === "Select Your Age:  " && <div className="answer-btn-5" onClick={handlepositive} style={{"textTransform": "capitalize"}}>
               {fourth}
                 </div>}
-                <div className="answer-btn-5" onClick={handleQuizP}>
+                <div className="answer-btn-5" onClick={handlepositive}>
               {yes}
                 </div>
-                <div className="answer-btn-5" onClick={handleQuizN}>
+                <div className="answer-btn-5" onClick={handleNo}>
               {no}
                 </div>
-               <div className="answer-btn-5" onClick={handleQuizP}>
+               <div className="answer-btn-5" onClick={handlepositive}>
               {third}
                 </div>
               </div>
